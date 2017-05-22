@@ -397,18 +397,35 @@ var STYLE_PREFIX = 'wsite';
 						<input type="hidden" name="form_version" value="2" />
 						<input type="hidden" name="wsite_approved" id="wsite-approved" value="approved" />
 						<input type="hidden" name="ucfid" value="454275796435607415" /> -->
-						Name:
-    <input type="text" name="name">
-    Address:
-    <input type="text" name="email">
-    Message:
-    <textarea name="message"></textarea>
- 						<input type="submit" value="Submit">				
+						<form method="POST" name="contactform" action="contact-form-handler.php"> 
+<p>
+<label for='name'>Your Name:</label> <br>
+<input type="text" name="name">
+</p>
+<p>
+<label for='email'>Email Address:</label> <br>
+<input type="text" name="email"> <br>
+</p>
+<p>
+<label for='message'>Message:</label> <br>
+<textarea name="message"></textarea>
+</p>
+<input type="submit" value="Submit"><br>
+</form>
+
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>			
 <div>
 
                     
 </div>
-						</div>
 </form> 
 	
 	

@@ -23,34 +23,65 @@
     }
   </style>
 		
-<style> 
+<style>	
+	
+
 movable {
-    width: 60px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
     background-color: red;
+    font-weight: bold;
     position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
+	animation-name: example; /* Safari 4.0 - 8.0 */
+
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+	animation-duration: 5s;
+
 }
 
 /* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    0%   {background-color:blue}
+    25%  {background-color:yellow}
+    50%  {background-color:blue}
+    75%  {background-color:yellow}
+    100% {background-color:transparent}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    0%   {background-color:blue}
+    25%  {background-color:yellow}
+    50%  {background-color:blue}
+    75%  {background-color:yellow}
+    100% {background-color:transparent}
 }
 </style>
 		
@@ -153,6 +184,12 @@ var STYLE_PREFIX = 'wsite';
 		
 		
 	</head>
+	
+	<movable id="div1">linear</movable>
+<movable id="div2">ease</movable>
+<movable id="div3">ease-in</movable>
+<movable id="div4">ease-out</movable>
+<movable id="div5">ease-in-out</movable>
 	<body class="header-page  wsite-page-index wsite-theme-light header-sticky banner-overlay-off "><div class="wrapper">
     <div class="edison-header">
       <div class="container">

@@ -36,6 +36,17 @@
 	z-index: 2;
 }
 	
+#myDIV2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+	opacity:0.7;
+    background-color: white;
+    -webkit-animation: mymove2 5s; /* Chrome, Safari, Opera */
+    animation: mymove2 5s;
+	z-index: 2;
+}
+	
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     0% {opacity: .7;filter:blue; left:0px; top:0px;}
@@ -46,6 +57,24 @@
 }
 
 /* Standard syntax */
+@keyframes mymove2 {
+    0% {opacity: .7;filter:blue; left:800px; top:0px;}
+    25%  {opacity: .4;filter:yellow; left:200px; top:0px;}
+    50%  {opacity: .1;filter:blue; left:200px; top:200px;}
+    75%  {opacity: .4;filter:yellow; left:0px; top:200px;}
+    100% {opacity: .7;filter:blue; left:800px; top:0px;}
+}
+	
+	/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove2 {
+    0% {opacity: .7;filter:blue; left:800px; top:0px;}
+    25%  {opacity: .4;filter:yellow; left:200px; top:0px;}
+    50%  {opacity: .1;filter:blue; left:200px; top:200px;}
+    75%  {opacity: .4;filter:yellow; left:0px; top:200px;}
+    100% {opacity: .7;filter:blue; left:800px; top:0px;}
+}
+
+/* Standard syntax */
 @keyframes mymove {
     0% {opacity: .7;filter:blue; left:0px; top:0px;}
     25%  {opacity: .4;filter:yellow; left:200px; top:0px;}
@@ -53,6 +82,7 @@
     75%  {opacity: .4;filter:yellow; left:0px; top:200px;}
     100% {opacity: .7;filter:blue; left:0px; top:0px;}
 }
+	
 </style>
 		
 <link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
@@ -316,21 +346,8 @@ var STYLE_PREFIX = 'wsite';
 <div id="myDIV" style="top:250px;left:700px">
 </div>
 		
-<!--<div id="myDIV" style="top:210px;left:200px">
-	<img src="images/34456467032_b90a9a41be_o.jpg">
+<div id="myDIV2" style="top:250px;left:750px">
 </div>
-		
-<div id="myDIV" style="top:250px;left:300px">
-	<img src="images/IMG_0860.jpg">
-</div>
-				
-<div id="myDIV" style="top:270px;left:400px">
-	<img src="images/IMG_1266.jpg">
-</div>
-				
-<div id="myDIV" style="top:320px;left:250px">
-	<img src="images/IMG_3245.jpg">
-</div>-->
 				
 				
 				

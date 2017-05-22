@@ -49,23 +49,13 @@
 	}
 
 
-.x-navbar-wrap {
+navbar-wrap {
      position:fixed;
      width:100%;
      top:0;
      z-index:99999;
-}
-
-.x-navbar-wrap .x-navbar {
-    background:transparent;
-}
-
-.x-navbar-wrap .x-navbar.x-navbar-fixed-top {
-    background:#000;
-}
-
-.x-navbar-wrap .x-navbar.x-navbar-fixed-top a {
-    color:#fff;
+	    background:transparent;
+color:#fff
 }
 
 header.masthead.masthead-stacked {

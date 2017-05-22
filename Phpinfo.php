@@ -4,5 +4,4 @@
 
     phpinfo(INFO_MODULES);
 
-
     ?> 

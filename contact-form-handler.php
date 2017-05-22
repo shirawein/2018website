@@ -40,10 +40,9 @@ if( empty($errors))
 	<title>Contact form handler</title>
 </head>
 
-<!--<body>
-<!-- This page is displayed only if there is some error -->
+<body>
 <?php
 echo nl2br($errors);
 ?>
-	
+	</body>
 </html>

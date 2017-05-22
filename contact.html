@@ -347,14 +347,9 @@ var STYLE_PREFIX = 'wsite';
 	<!--<iframe height="517" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://shirabbb.wufoo.com/embed/z1s0elh61vmn2wb/"></iframe>-->
 	
 
-   
+  <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7WfK8hWp4DYAL1YEPuHYyouOf0uLH12Tc4dYDkuxNyUOVGw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe>-->
 	
-	<form name="contact_form" method=POST action="contact-form-handler.php">
-  
-<header id="header" class="info">
-<h2>Contact Me</h2>
-<div>Send me a message via e-mail.</div>
-</header>
+	
 			<!--	<div id="454275796435607415-form-parent" class="wsite-form-container"
 					style="margin-top:0px;">
 						<ul class="formlist" id="454275796435607415-form-list">
@@ -397,8 +392,13 @@ var STYLE_PREFIX = 'wsite';
 						<input type="hidden" name="form_version" value="2" />
 						<input type="hidden" name="wsite_approved" id="wsite-approved" value="approved" />
 						<input type="hidden" name="ucfid" value="454275796435607415" /> -->
-						<form method="POST" name="contactform" action="contact-form-handler.php"> 
-<p>
+<form name="contact_form" method=POST action="contact-form-handler.php">
+  
+<header id="header" class="info">
+<h2>Contact Me</h2>
+<div>Send me a message via e-mail.</div>
+</header>
+	<p>
 <label for='name'>Your Name:</label> <br>
 <input type="text" name="name">
 </p>
@@ -411,7 +411,6 @@ var STYLE_PREFIX = 'wsite';
 <textarea name="message"></textarea>
 </p>
 <input type="submit" value="Submit"><br>
-</form>
 
 <script language="JavaScript">
 // Code for validating the form

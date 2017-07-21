@@ -55,7 +55,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  body.reveal-content .edison-header .header-inner-wrap, body.wsite-native-mobile-editor .edison-header .header-inner-wrap { opacity: 1; }
  @media only screen and (min-width: 1025px) {
  .edison-header .header-inner-wrap { display: table; width: 100%; }
- .edison-header .header-inner-wrap .logo, .edison-header .header-inner-wrap .nav-wrap, .edison-header .header-inner-wrap .site-utils { display: table-cell; vertical-align: middle; }
+  
+  /*changed fom middle to left in this line*/
+ .edison-header .header-inner-wrap .logo, .edison-header .header-inner-wrap .nav-wrap, .edison-header .header-inner-wrap .site-utils { display: table-cell; vertical-align: left; }
  .edison-header .header-inner-wrap .logo, .edison-header .header-inner-wrap .site-utils { width: 10%; }
  }
  @media only screen and (max-width: 1024px) {

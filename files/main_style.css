@@ -81,7 +81,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  /*hamburger menu*/
  .hamburger { height: 15px; padding: 0; margin-left: 20px; border: 0; background-color: #3D3DA1; 
   }
- .hamburger i { display: block; width: 20px; height: 3px; background-color: #ffffff; position: relative; -webkit-transition: background-color 0.2s ease-out; -o-transition: background-color 0.2s ease-out; transition: background-color 0.2s ease-out; }
+ .hamburger i { display: block; width: 20px; height: 3px; background-color: transparent; position: relative; -webkit-transition: background-color 0.2s ease-out; -o-transition: background-color 0.2s ease-out; transition: background-color 0.2s ease-out; }
  .nav-open .hamburger i { background-color: transparent; }
  .hamburger i::before, .hamburger i::after { display: block; width: 20px; height: 3px; background-color: transparent; position: absolute; content: ""; -webkit-transition: top 0.2s ease-out 0.2s, transform 0.2s ease-out; -o-transition: top 0.2s ease-out 0.2s, transform 0.2s ease-out; transition: top 0.2s ease-out 0.2s, transform 0.2s ease-out; }
  .nav-open .hamburger i::before, .nav-open .hamburger i::after { -webkit-transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s; -o-transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s; transition: top 0.2s ease-out, transform 0.2s ease-out 0.2s; top: 0; }

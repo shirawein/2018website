@@ -125,6 +125,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  @media only screen and (min-width: 1025px) {
  .wsite-search-input { font-family: 'Karla', sans-serif; padding-right: 0 !important; padding-left: 0 !important; border: 0; text-align: right; font-size: 16px; }
  }
+
  #icontent .wsite-search { position: relative; display: inline-block; font-family: 'Karla', sans-serif; padding-bottom: 0; }
  #icontent .wsite-search:before { content: 'Search'; display: inline-block; }
  #icontent .wsite-search input { display: none; }

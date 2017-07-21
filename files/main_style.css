@@ -78,7 +78,7 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  .edison-header .wsite-custom-minicart-wrapper { font-family: 'Karla', sans-serif; }
  .edison-header .wsite-custom-minicart-wrapper a { font-size: 16px; text-decoration: none; }
 
-/*changing hamburger*/
+ /*hamburger menu*/
  .hamburger { height: 15px; padding: 0; margin-left: 20px; border: 0; background-color: #3D3DA1; 
   }
  .hamburger i { display: block; width: 20px; height: 3px; background-color: #ffffff; position: relative; -webkit-transition: background-color 0.2s ease-out; -o-transition: background-color 0.2s ease-out; transition: background-color 0.2s ease-out; }
@@ -92,6 +92,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
  @media only screen and (min-width: 1025px) {
  .hamburger { display: none; }
  }
+
+
  .search-toggle { font-family: 'Karla', sans-serif; display: none; padding: 5px 0; font-size: 16px; text-decoration: none; text-align: center; }
  .has-site-search .search-toggle { display: inline-block; }
  #wsite-search-sidebar .close-btn { display: none; }
